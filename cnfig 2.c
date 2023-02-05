@@ -132,39 +132,30 @@ int main()
 	a=(accel1.OpMode<<5 | accel1.BW<<2 |accel1.Grange );
 	
 	b=(gyro1.BW<<3|gyro1.range);
-	
-	
-	
+
 	c=(magneto1.PowMode<<5|magneto1.OpMode<<3|magneto1.DOR);
 	
-	
 	int n = a;
-    int len = 8;
+   	int len = 8;
  
-    char* binary1 = toBinary(n, len);
-    printf("[ACC_Config](binary)= %s\n", binary1);
-    free(binary1);
+    	char* binary1 = toBinary(n, len);
+    	printf("[ACC_Config](binary)= %s\n", binary1);
+    	free(binary1);
     
-    n=b;
-    char* binary2 = toBinary(n, len);
-    printf("[GYR_Config_0](binary)= %s\n", binary2);
-    free(binary2);
-  
-  	n=gyro1.OpMode;
-    char* binary3 = toBinary(n, len);
-    printf("[GYR_Config_1](binary)= %s\n", binary3);
-    free(binary3);
+    	n=b;
+    	char* binary2 = toBinary(n, len);
+    	printf("[GYR_Config_0](binary)= %s\n", binary2);
+    	free(binary2);
+	n=gyro1.OpMode;
+   	 char* binary3 = toBinary(n, len);
+    	printf("[GYR_Config_1](binary)= %s\n", binary3);
+   	 free(binary3);
     
-    n=c;
-    char* binary4 = toBinary(n, len);
-    printf("[MAG_Config](binary)= %s\n", binary4);
-    free(binary4);
-    
-    
-    
-    
-    
-	return 0;
+   	 n=c;
+   	 char* binary4 = toBinary(n, len);
+    	printf("[MAG_Config](binary)= %s\n", binary4);
+    	free(binary4);
+    	return 0;
 }
 
 
