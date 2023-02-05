@@ -133,10 +133,7 @@ int main()
 	
 	b=(gyro1.BW<<3|gyro1.range);
 	
-	
-	
 	c=(magneto1.PowMode<<5|magneto1.OpMode<<3|magneto1.DOR);
-	
 	
 	int n = a;
     int len = 8;
