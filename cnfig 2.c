@@ -196,7 +196,7 @@ int main()
     printf("The binary representation of %d is %s", n, binary);
     free(binary);
     
-    printf("\n%d",a);
+    printf("\n[ACC_Config](binary)=%d",a);
     
 	return 0;
 }
